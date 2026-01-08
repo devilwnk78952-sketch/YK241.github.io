@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>给乖乖的音乐空间</title>
+    <!-- 链接到CSS样式文件 -->
+    <link rel="stylesheet" href="style.css">
+    <!-- 链接到JavaScript文件 -->
+    <script src="script.js" defer></script>
+    <!-- 引入一个好看的字体 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎵 欢迎来到241音乐世界 🎵</h1>
+            <p class="hint">（音乐已自动播放，如需控制请使用下方按钮）</p>
+        </header>
+        
+        <main>
+            <!-- 这里是音乐播放器的核心 -->
+            <audio id="bgMusic" loop>
+                <!-- 重要：将下一行中的“bgm.mp3”替换成你实际音乐文件的名称！ -->
+                <source src="therose.mp3" type="audio/mpeg">
+                您的浏览器不支持音频播放。
+            </audio>
+            
+            <div class="controls">
+                <button id="playBtn">▶️ 播放</button>
+                <button id="pauseBtn">⏸️ 暂停</button>
+                <button id="volUpBtn">🔊 加大音量</button>
+                <button id="volDownBtn">🔉 减小音量</button>
+            </div>
+            
+            <div class="info">
+                <p>此刻，让旋律充满你的空间。</p>
+                <p>这个网站由我亲手搭建，只为你播放这一首心仪之曲。</p>
+            </div>
+        </main>
+        
+        <footer>
+            <p>© 20260110 我们的纪念日  纯粹、简单、快乐开心</p>
+        </footer>
+    </div>
+</body>
+</html>
